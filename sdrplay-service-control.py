@@ -11,10 +11,10 @@ from PyQt6.QtWidgets import (
 )
 
 def restart():
-    subprocess.run("sudo systemctl restart sdrplay", shell=True)
+    subprocess.run("systemctl restart sdrplay", shell=True)
 
 def stop():
-    subprocess.run("sudo systemctl stop sdrplay", shell=True)
+    subprocess.run("systemctl stop sdrplay", shell=True)
 
 app = QApplication([])
 window = QWidget()
